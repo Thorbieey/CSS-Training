@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#order-page {
+    background: #afe1af;
+    width: 100%;
+    height: 520px; /* when set to percentage its becomes dependent on parent */
+    padding: 20px;
+    /*margin: 20px;
+    border: 5px solid black;
+    */
+}
+
+.section-title {
+    color: #ff69b4;
+}
+
+#order-page h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #ff69b4;
+    padding: 8px 16px;
+}
+
+.main-header > div { /*matches every child div under main header*/
+    display: inline-block;
+    vertical-align: middle; /*aligns text to the middle of box width wise*/
+}
+
+.main-header-name {
+    color: #CC3399;
+    text-decoration: none; /*remove website default underline*/
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block; /*to give the selsected box both inline: all text in one line & block: indivdual text border and margin can be styled*/
+    text-align: right;
+    width: calc( 100% - 155px); /*width of nav list - width of div*/
+    vertical-align: middle;
+}
+
+.main-nav-list {
+    margin: 0; /*set Marg & Pad to 0 to remove dimension from box to aid width calc of nav list*/
+    padding: 0;
+    list-style: none; /*remove bullet from list*/
+}
+
+.main-nav-item {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.main-nav-item-link {
+    color: #CC3399;
+    text-decoration: none;
+}
+
+/*li > a {
+    color: #CC3399;
+    text-decoration: none;
+}*/
+
